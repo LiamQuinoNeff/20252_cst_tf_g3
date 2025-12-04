@@ -171,7 +171,6 @@ npm install
 
 #### Análisis y Solver (Python)
 1. **Notebook:** Abrir `picross.ipynb` en Jupyter/VS Code y ejecutar las celdas secuencialmente
-2. **Script:** `python megaPicross.py` para resolver el ejemplo de Mega Picross
 
 #### Aplicación Web Interactiva (Frontend)
 1. Navegar a la carpeta del frontend:
