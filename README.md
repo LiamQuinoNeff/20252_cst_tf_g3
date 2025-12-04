@@ -133,6 +133,71 @@ Donde:
 - **Trade-off complejidad-flexibilidad:** Mayor flexibilidad (colores, mega) implica mayor complejidad computacional
 - **Aplicabilidad:** Las técnicas son generalizables a otros puzzles lógicos (Sudoku, Kakuro, etc.)
 
+## Aplicaciones y extensiones futuras
+
+- **Generación automática de puzzles:** Crear Picross con solución única garantizada
+- **Resolución incremental:** Mostrar pasos de razonamiento humano
+- **Mega Picross extendido:** Soportar pistas que abarcan 3+ líneas
+- **Optimización:** Reducir patrones generados mediante heurísticas
+- **Interfaz interactiva:** Aplicación web para jugar y resolver
+
+## Código y ejecución
+
+### Requisitos
+
+#### Backend (Python)
+```bash
+pip install numpy matplotlib ortools
+```
+
+#### Frontend (Next.js)
+```bash
+cd frontend
+npm install
+```
+
+### Estructura del proyecto
+```
+📁 20252_cst_tf_g3/
+├── 📁 frontend/              # Aplicación web interactiva (Next.js)
+│   ├── app/                  # Páginas y componentes de Next.js
+│   ├── package.json          # Dependencias del frontend
+│   └── .gitignore           # Archivos ignorados por git
+├── 📓 picross.ipynb          # Notebook principal con todas las variaciones
+└── 📄 README.md              # Este archivo
+```
+
+### Ejecución
+
+#### Análisis y Solver (Python)
+1. **Notebook:** Abrir `picross.ipynb` en Jupyter/VS Code y ejecutar las celdas secuencialmente
+2. **Script:** `python megaPicross.py` para resolver el ejemplo de Mega Picross
+
+#### Aplicación Web Interactiva (Frontend)
+1. Navegar a la carpeta del frontend:
+   ```bash
+   cd frontend
+   ```
+
+2. Instalar dependencias (solo la primera vez):
+   ```bash
+   npm install
+   ```
+
+3. Iniciar el servidor de desarrollo:
+   ```bash
+   npm run dev
+   ```
+
+4. Abrir el navegador en `http://localhost:3000`
+
+**Características del Frontend:**
+- 🎮 **Interfaz interactiva** para visualizar Picross
+- 🎨 **Visualización en tiempo real** de las soluciones
+- 🧩 **Múltiples ejemplos** con diferentes variaciones
+- 📊 **Estadísticas** y seguimiento de progreso
+- 🚀 **Responsive design** para móviles y desktop
+
 ---
 
 ## Créditos
